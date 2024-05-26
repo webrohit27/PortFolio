@@ -46,7 +46,7 @@ const Navbar = () => {
          </div>
 
          <div>
-            <ul className='font-semibold'>
+            <ul className='font-semibold gap-12d'>
                 <li><Link to='about' smooth={true} offset={50} duration={500}>About</Link></li>
 
                 <li><Link to='portfolio' smooth={true} offset={50} duration={500}>Portfolio</Link></li>
