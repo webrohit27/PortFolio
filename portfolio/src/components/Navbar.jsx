@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
 
             <li className='relative group'>
-                <Link to='contact' smooth={true} offset={50} duration={50}>Contact</Link>
+                <Link to='contact' smooth={true} offset={50} duration={50}>contact</Link>
                 <span className='absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-100 transition-transform duration-300 ease-in-out'></span>
             </li>
             
