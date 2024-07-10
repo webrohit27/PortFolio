@@ -5,10 +5,21 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  background: linear-gradient(135deg, #282727, #201e1e);
-  background-size: cover;
-  background-repeat: none;
+  background: #151515;
+
 }
+
+span,
+.primary-color {
+  background-image: linear-gradient(to right, #7a0d8a, #c92085, #c68109);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bg-primary-color {
+  @apply bg-gradient-to-r from-[#7a0d8a] via-[#c92085] to-[#c68109];
+}
+
 
 h2 {
   @apply text-xl md:text-4xl;
@@ -19,7 +30,7 @@ p {
 }
 
 .glass{
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  background: linear-gradient(135deg, rgba(55, 55, 55, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border:1px solid rgba(255, 255, 255, 0.18);
@@ -32,5 +43,27 @@ p {
   border-radius: 50%;
   pointer-events: none;
   z-index: 1;
-  background: radial-gradient(circle, rgba(70, 161, 181, 0.2), transparent 70%);
+  background: radial-gradient(circle, rgba(122, 91, 41, 0.5), transparent 70%);
+}
+
+
+.active-project {
+  position: relative;
+}
+
+.active-project::before,
+.active-project::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #D3208B;
+  bottom: -6px;
+}
+
+.active-project::after {
+  background-color: #FDA000;
+  width: 80%;
+  bottom: -10px;
 }

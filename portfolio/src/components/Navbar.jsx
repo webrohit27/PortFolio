@@ -1,64 +1,42 @@
-import React from 'react'
-import { useState } from 'react'
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import { Link } from 'react-scroll'
+import React, {useState} from 'react'
+import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 const Navbar = () => {
-
     const [nav, setNav] = useState(false)
 
-    const toggleNav = () => {
+    const handleNav = () => {
         setNav(!nav)
     }
 
-    const closeNav = () => {
-        setNav(false)
-    }
+    return (
+        <div className='text-gray-200 flex justify-between items-center max-w-[1240px]
+         mx-auto h-24 px-4 text-l'>
 
-  return (
+            <h1 className='text-3xl font-bold  ml-4'>DEV_ROHIT</h1>
+            <ul className='hidden md:flex z-50'>
+                <li className='p-5'><a href='#about'>About</a></li>
+                <li className='p-5'><a href='#portfolio'>Portfolio</a></li>
+                <li className='p-5'><a href='#contact' className='font-bold px-4 py-2 
+                rounded-xl bg-primary-color'>Contact</a></li>
+            </ul>
 
-    <div className='flex text-4xl justify-between items-center text-gray-200 px-6 max-w-[1300px] mx-auto h-24'> 
-         <a href="">Desi</a>
+            <div onClick={handleNav} className='z-50 block md:hidden'>
+                {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+            </div>  
 
-         <ul className='hidden md:flex gap-12 z-10 cursor-pointer'>
-            <li className='relative group'>
-                <Link to='about' smooth={true} offset={50} duration={50}>About</Link>
-                <span className='absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-100 transition-transform duration-300 ease-in-out'></span>
-            </li>
+            <div className={nav ? 
+            'z-50 text-gray-300 fixed h-full left-0 top-0 w-[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500' 
+                                    : 'fixed left-[-100%]'}>
+                <h1 className='text-3xl primary-color m-4'>DEV_ROHIT</h1>
+                <ul className='p-8 text-2xl'>
+                    <li className='p-2'><a href='#about'>About</a></li>
+                    <li className='p-2'><a href='#portfolio'>Portfolio</a></li>
+                    <li className='p-2'><a href='#contact'>Contact</a></li>
+                </ul> 
+            </div>
 
-            <li className='relative group'>
-                <Link to='portfolio' smooth={true} offset={50} duration={50}>Portfolio</Link>
-                <span className='absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-100 transition-transform duration-300 ease-in-out'></span>
-            </li>
-
-            <li className='relative group'>
-                <Link to='contact' smooth={true} offset={50} duration={50}>contact</Link>
-                <span className='absolute bottom-0 left-0 w-full h-1 bg-sky-600 transform scale-x-100 transition-transform duration-300 ease-in-out'></span>
-            </li>
-            
-
-            
-
-         </ul>
-
-         <div onClick={toggleNav} className='md:hidden z-30'>
-            {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-         </div>
-
-         <div>
-            <ul className='font-semibold gap-12d'>
-                <li><Link to='about' smooth={true} offset={50} duration={500}>About</Link></li>
-
-                <li><Link to='portfolio' smooth={true} offset={50} duration={500}>Portfolio</Link></li>
-
-                <li><Link to='contact' smooth={true} offset={50} duration={500}>Contact</Link>
-                </li>
-            </ul> 
-         </div>
-
-    </div>
-   
-  )
+        </div>
+    )
 }
 
 export default Navbar
