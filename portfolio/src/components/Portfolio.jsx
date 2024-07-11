@@ -16,8 +16,8 @@ const projects = [
         description:
           "UI for frontend development using React.",
         links: {
-          site: "#",
-          github: "#",
+          site: "https://devrohitfolio.netlify.app",
+          github: "https://github.com/webrohit27",
         },
       },
       {

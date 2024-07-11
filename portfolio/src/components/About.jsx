@@ -18,9 +18,7 @@ const About = () => {
 <div className='p-6'>
             <h2 className='text-gray-200 text-3xl font-bold mb-4'>Skills</h2>
             <p className='text-gray-300 mb-4'>
-                As a passionate web front-end developer with over 5 years of
-                experience, I have a proven track record of creating visually
-                stunning and responsive websites.
+            As a budding web front-end developer with a solid foundation in ReactJS and NodeJS, I bring a fresh perspective and a commitment to excellence in creating engaging and responsive websites.
             </p>
             <div className='md:flex flex-wrap gap-4 text-4xl justify-center hidden'>
                 <DiHtml5 className="text-orange-600" />
@@ -50,10 +48,9 @@ const About = () => {
 
 
         <div className='p-6'>
-            <h2 className='text-gray-200 text-3xl font-bold mb-4'>Frontend Experience</h2>
+            <h2 className='text-gray-200 text-3xl font-bold mb-4'>Backend Experience</h2>
             <p className='text-gray-300 mb-4'>
-                Experienced in creating modern, responsive web applications using
-                the latest frontend technologies.
+            As a budding backend developer, I've honed my skills in Node.js, Express.js, MongoDB, and API testing with Postman through hands-on projects. This experience has prepared me to build efficient, scalable backend systems, emphasizing high performance, database management, and API reliability.
             </p>
 
         </div>

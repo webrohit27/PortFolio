@@ -68,7 +68,7 @@ const Hero = () => {
             href="/"
             title="Download CV"
             role="button"
-            class="mt-4 px-4 py-2 text-lg font-bold text-white  bg-primary-color rounded-xl">
+            className="mt-4 px-4 py-2 text-lg font-bold text-white  bg-primary-color rounded-xl">
             Download CV 
           </button>
       </div>
@@ -98,11 +98,16 @@ const Hero = () => {
         <div className="flex justify-center items-center flex-col glass">
 
 
-          <div className="text-7xl flex justify-start gap-4">
-            <AiFillLinkedin className="text-gray-600" />
-            <AiFillGithub className="text-gray-600" />
-            <AiFillInstagram className="text-gray-600" />
-          </div>
+        <div className="text-7xl flex justify-start gap-4">
+          <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+                <AiFillLinkedin className="text-gray-600" />
+          </a>
+          <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
+                <AiFillGithub className="text-gray-600" />
+         </a>
+                <AiFillInstagram className="text-gray-600" />
+           </div>
+
 
         </div>
 
@@ -119,20 +124,6 @@ const Hero = () => {
 
 
       </div>
-
-
-
-
-
-
-
-
-      
-
-
-
-
-      
 
 
 

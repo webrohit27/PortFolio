@@ -12,10 +12,7 @@ const Contact = () => {
                     <div className="text-gray-300 my-3">
                         <h3 className="text-4xl font-semibold mb-5">About <span>Me</span></h3>
                         <p className="text-justify leading-7 w-11/12 mx-auto">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                            eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                            ratione quibusdam doloribus pariatur consequuntur sint.
-                            Reprehenderit cupiditate possimus facere quasi voluptatem?
+                        With a fresh perspective from my academic background in computing, I'm fervently committed to web development, particularly in ReactJS and NodeJS. My hands-on experience with various projects has sharpened my problem-solving skills and reinforced my commitment to delivering high-quality solutions.
                         </p>     
                     </div>
                 </div> 
@@ -29,17 +26,17 @@ const Contact = () => {
                         <p><span className="md:text-base text-xs">Projects</span></p>
                     </div>
                     <div className="bg-[#333333]/40 p-5 rounded-lg">
-                        <h3 className="md:text-4xl text-2xl font-semibold text-white">5
+                        <h3 className="md:text-4xl text-2xl font-semibold text-white">1
                             <span>+</span>
                         </h3>
                         <p><span className="md:text-base text-xs">years experience</span></p>
                     </div>
-                    <div className="bg-[#333333]/40 p-5 rounded-lg">
+                    {/* <div className="bg-[#333333]/40 p-5 rounded-lg">
                         <h3 className="md:text-4xl text-2xl font-semibold text-white">30
                             <span>+</span>
                         </h3>
                         <p><span className="md:text-base text-xs">happy clients</span></p>
-                    </div>
+                    </div> */}
                 </div>
 
 
