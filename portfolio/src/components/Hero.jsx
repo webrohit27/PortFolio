@@ -13,8 +13,8 @@ import {
   DiHtml5,
   DiCss3,
   // DiSass,
-  DiBootstrap,
-  DiDatabase
+  // DiBootstrap,
+  // DiDatabase
  
 } from 'react-icons/di'
 import ShinyEffect from "./ShinyEffect";
