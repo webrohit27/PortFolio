@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className={nav ? 
             'z-50 text-gray-300 fixed h-full left-0 top-0 w-[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500' 
                                     : 'fixed left-[-100%]'}>
-                <h1 className='text-3xl primary-color m-4'>DEV_ROHIT</h1>
+                <h1 className='text-3xl primary-color m-4'>ROHIT</h1>
                 <ul className='p-8 text-2xl'>
                     <li className='p-2'><a href='#about'>About</a></li>
                     <li className='p-2'><a href='#portfolio'>Portfolio</a></li>
