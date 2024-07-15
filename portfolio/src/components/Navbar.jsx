@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className='text-gray-200 flex justify-between items-center max-w-[1240px]
          mx-auto h-24 px-4 text-l'>
 
-            <h1 className='text-3xl font-bold  ml-4'>DEV_ROHIT</h1>
+            <h1 className='text-3xl font-bold  ml-4'>ROHIT</h1>
             <ul className='hidden md:flex z-50'>
                 <li className='p-5'><a href='#about'>About</a></li>
                 <li className='p-5'><a href='#portfolio'>Portfolio</a></li>
