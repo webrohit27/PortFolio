@@ -17,7 +17,7 @@ const Experience = () => {
 
         <div class="mb-[20px] text-white bg-gray-700/20 p-4 rounded-3xl max-w-[300px] sm:max-w-[600px] mx-auto">
             <p> SevenMentor & Training Pvt Ltd</p>
-            <p className='text-gray-400'>(2022 - Present)</p>
+            <p className='text-gray-400'>(2024 - Present)</p>
             <p className='text-gray-500'>
                 
             </p>
